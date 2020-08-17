@@ -35,7 +35,7 @@ $friendRequestData = mysqli_query($conn, "select *, friendslist.id as frId from 
     <!-- Sidebar user panel (optional) -->
     <div class="user-panel mt-3 pb-3 mb-3 d-flex">
       <div class="image">
-        <img src="<?php echo $_SESSION['photo'] ?? "" ?>" class="img-circle elevation-2" alt="User Image" style="width: 34px !important; height: 100%;">
+        <img src="<?php echo $_SESSION['photo'] ?? "" ?>" class="img-circle elevation-2" alt="User Image" style="width: 34px !important; height: 34px;">
       </div>
       <div class="info">
         <a href="setting.php" class="d-block"><?php echo $_SESSION['username'] ?></a>
