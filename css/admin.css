@@ -1,0 +1,14 @@
+.listImg{
+    width: 70px;
+    height: 70px;
+    border:1px solid #ad670c;
+    border-radius: 15%;
+}
+.hide{
+    display: none;
+}
+.custom-file-label{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
