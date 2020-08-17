@@ -1,9 +1,9 @@
 <?php
 session_start();
-$dbhost = "localhost";
-$user = "root";
-$pass = "";
-$dbname = "friends_chat_db";
+$dbhost = "us-cdbr-east-02.cleardb.com";
+$user = "b9e2b39d4e1466";
+$pass = "47a29977";
+$dbname = "heroku_78d3bf322bd68ea";
 $conn = mysqli_connect($dbhost, $user, $pass);
 mysqli_select_db($conn, $dbname);
 $imagePath = "user_img/";
