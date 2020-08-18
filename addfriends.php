@@ -7,9 +7,11 @@ $title='Add Friends' ;
 $searchName="";
 $searchQuery="";
 if(isset($_GET['search'])){
-  $searchName=$_GET['search'];
+  $searchName=mysqli_real_escape_string($conn, $_GET['search']);
   $searchQuery = mysqli_query($conn, "select * from users where username LIKE '%$searchName%' and active=1 and isDeactive=0 limit 10");
+    $searchName=$_GET['search'];
 }
+
 ?>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -27,7 +29,7 @@ if(isset($_GET['search'])){
             </div><!-- /.col -->
             <div class="col-lg-4 col-6">
               <form action="addfriends.php" method="get">
-                <input type="search" class="form-control" name="search" placeholder="Search">
+                <input type="search" class="form-control" name="search" placeholder="Search" autocomplete="off">
               </form>
             </div>
           </div><!-- /.row -->
