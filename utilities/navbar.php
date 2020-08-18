@@ -125,7 +125,7 @@ $friendRequestData = mysqli_query($conn, "select *, friendslist.id as frId from 
             <?php if(mysqli_num_rows($friendsData)==0) : ?>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <p>- No Friends Added -</p>
+                <p>- No Recent Friend Chat -</p>
               </a>
             </li>
             <?php endif;?>
@@ -153,7 +153,7 @@ $friendRequestData = mysqli_query($conn, "select *, friendslist.id as frId from 
             <?php if(mysqli_num_rows($groupsData)==0) : ?>
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <p>- No Groups Joined -</p>
+                <p>- No Recent Group Chat -</p>
               </a>
             </li>
             <?php endif;?>
