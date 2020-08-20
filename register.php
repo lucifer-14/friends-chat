@@ -20,7 +20,7 @@ if (isset($_POST["register"])) {
     <title>Register | Friends-Chat</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="admin/images/friends_chat_logo.jpg" sizes="128x128" />
+    <link rel="shortcut icon" href="images/friends_chat_logo.jpg" sizes="128x128" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="logincomponent/css/util.css">
     <link rel="stylesheet" type="text/css" href="logincomponent/css/main.css">
