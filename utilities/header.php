@@ -13,7 +13,7 @@ if (!isset($_SESSION['userId'])) {
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="images/savage_logo.png" sizes="128x128" />
+    <link rel="shortcut icon" href="images/friends_chat_logo.jpg" sizes="128x128" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="components/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="components/fontawesome-free/css/v4-shims.min.css">
