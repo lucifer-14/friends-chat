@@ -29,7 +29,7 @@ $friendRequestData = mysqli_query($conn, "select *, friendslist.id as frId from 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
   <a href="index.php" class="brand-link">
-    <img src="images/savage_logo.png" alt="Savage Anime Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <img src="images/friends_chat_logo.jpg" alt="Savage Anime Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
     <span class="brand-text font-weight-light">Friends-Chat</span>
   </a>
 
