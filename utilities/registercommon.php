@@ -34,6 +34,7 @@ function register($role): bool
             password,
             active,
             registeredDate,
+            photo,
             isDeactive
             )
         values(
@@ -44,13 +45,14 @@ function register($role): bool
             '$passwordhash',
             1,
             now(),
+            'user_img/default_profile.jpg',
             '$isDeactive'
             )";
 
         //insert to db
         //$_SESSION['userId'] = $user;
         $_SESSION['username'] = $username;
-        $_SESSION['photo'] = $photo;
+        $_SESSION['photo'] = 'user_img/default_profile.jpg';
         $takeIdQuery=mysqli_query($conn, "select * from users where username=$username and email=$email and phone=$phone and $gender=$gender and password=$passwordhash");
         $user = mysqli_fetch_object($takeIdQuery);
         $_SESSION['userId'] = $user->id;
